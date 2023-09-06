@@ -1,0 +1,7 @@
+<h1>Welcome <%= @user.name %></h1>
+
+<p>This is the list of budgets you have created</p>
+
+<% @user.budgets.each do |budget| %>
+  <p><%=link_to budget.name, budget %></p>
+<% end %>
